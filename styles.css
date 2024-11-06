@@ -2,10 +2,250 @@
 body {
     margin: 0;
     font-size: 16px;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+/* Header Styling */
+header {
+    background-color: white;
+    padding: 10px;
+}
+
+header .container {
+    /* Flex layout for header content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    /* Removes default margin for header title */
+    margin: 0;
+    font-size: 18px;
+}
+
+header nav ul {
+    /* Styling for navigation menu */
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    /* Default color and no underline for links */
+    color: #6b7280;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    /* Link color change on hover */
+    color: #5A67D8;
+}
+
+/* Hero Overview Section */
+.overview-hero {
+    /* Hero background and layout */
+    background-color: #E2E8F0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.overview-hero-image img {
+    /* Limit max width of hero image */
+    width: 100%;
+    max-width:200px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 80px;
+}
+
+.overview-hero-text {
+    flex: 1;
+}
+
+.overview-hero-text h2 {
+    /* Hero section title styling */
+    font-size: 24px;
+    margin: 1;
+    float:center;
+}
+
+.overview-hero-text p {
+    float:center;
+     width: 90%;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5; 
+}
+
+/* Learn About Section */
+.learn-about {
+    /* Section padding */
+    padding: 20px;
+}
+
+.learn-about h2 {
+    /* Section title styling */
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.cards {
+    /* Card layout using grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card {
+    /* Card styling with borders and shadow */
+    text-align: center;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    /* Card image full width */
+    width: 100%;
+    height: 230px;
+}
+
+.card h3 {
+    /* Card title color and font size */
+    color: #48BB78;
+    font-size: 21px;
+}
+
+/* COVID-19 Testing Section */
+.testing {
+    /* Background and text color for section */
+    background-color: #4A5568;
+    color: white;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.testing .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    height: auto;
+}
+
+.testing .cta {
+    padding: 100px;
+    padding-left: 200px;
+}
+.testing a {
+    text-decoration: none;
+}
+.testing .btn {
+    /* Button styling */
+    background-color: #48BB78;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Recent Stories Section */
+.stories {
+    /* Section padding */
+    padding: 20px;
+}
+
+.stories h2 {
+    /* Title color */
+    color: #5A67D8;
+}
+
+.stories article {
+    /* Flex layout for article items */
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.stories article img {
+    /* Rounded image with fixed size */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.stories article h3 {
+    /* Article title font size */
+    font-size: 18px;
+}
+
+.stories article a {
+    /* Link color in article */
+    color: #5A67D8;
+    text-decoration: none;
+}
+
+/* Newsletter Section */
+.newsletter {
+    /* Background and text color */
+    padding: 20px;
+    background-color: #48BB78;
+    color: white;
+    text-align: center;
+}
+
+.newsletter .container {
+    /* Center layout for newsletter content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.newsletter form {
+    /* Layout for form fields */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.newsletter input[type="email"] {
+    /* Email input styling */
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.newsletter .btn {
+    /* Subscribe button styling */
+    padding: 10px 20px;
+    background-color: #5A67D8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+footer {
+    /* Footer background and text styling */
+    background-color: #4A5568;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
